@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'Amatic SC';
+    src: url('font/amatic-sc.ttf');
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('font/segoe-ui.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: unset;
+    font-family: 'Segoe UI';
+    font-size: 11pt;
+}
+
+body {
+    background-color: #d1d1d1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+    width: 15px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #ddd;
+    box-shadow: -2px -2px 1px #0002;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 2px;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+#content-box-container {
+    position: fixed;
+    background-color: #0008;
+    width: 100vw;
+    height: 100vh;
+}
+
+.content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.content-textbox {
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+}
+
+.close-button {
+    fill: #333;
+    position: fixed;
+    width: 40px;
+    margin: 5px 20px 5px 5px;
+    transition: .2s;
+    cursor: pointer;
+}
+.close-button:hover {
+    width: 30px;
+    margin: 10px 25px 10px 10px;
+}
+
+#content-textbox-content {
+    padding: 40px;
+    overflow-y: scroll;
+    width: 800px;
+    height: 400px;
+}
+#content-textbox-content::-webkit-scrollbar {
+    width: 15px;
+}
+#content-textbox-content::-webkit-scrollbar-track {
+    background-color: #ddd;
+    box-shadow: -2px -2px 1px #0002;
+}
+#content-textbox-content::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 2px;
+}
+#content-textbox-content::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+.content-title-label {
+    font-family: 'Amatic SC';
+    font-size: 22pt;
+    margin-bottom: 25px;
+}
+
+.content-paragraph {
+    margin-top: 10px;
+}
+
+.img-selection {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    border-radius: 10px;
+    margin: 10px 5px 10px 5px;
+    height: 300px;
+}
+
+.nav-bar {
+    height: 80px;
+    background-color: white;
+    box-shadow: 2px 2px 2px #0002;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px 5px 20px;
+    position: fixed;
+    width: calc(100vw - 40px);
+}
+
+.title-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upper-title {
+    font-size: 14pt;
+    font-family: 'Amatic SC';
+}
+
+.main-title {
+    font-size: 22pt;
+    font-family: 'Amatic SC';
+}
+
+.author-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.author-label {
+    text-align: right;
+    font-size: 11pt;
+    color: #333;
+}
+
+#main-content {
+    padding: 90px 60px 30px 60px;
+}
+
+.bubble {
+    padding: 30px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px #0002;
+    border-radius: 10px;
+    transition: .2s;
+    cursor: pointer;
+}
+.bubble:hover {
+    background-color: #eee;
+}
+
+.bubble-title-label {
+    font-family: 'Amatic SC';
+    font-size: 18pt;
+}
+
+.bubble-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 10px;
+}
